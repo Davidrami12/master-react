@@ -1,6 +1,7 @@
 import { Buscador } from "./components/Buscador";
 import { Crear } from "./components/Crear";
 import { Listado } from "./components/Listado";
+import { useState } from "react";
 
 function App() {
 
@@ -30,7 +31,7 @@ function App() {
         {/*Contenido principal*/}
         <section id="content" className="content">
 
-            {/*aqui va el listado de peliculas*/}
+            {/*Aquí va el listado de peliculas*/}
             <Listado listadoState={listadoState} setListadoState={setListadoState}/> {/*pasamos las 2 propiedades*/}
             {/*Desde dentro de Listado podemos actualizar un estado que está en el componente padre*/}
             
@@ -39,9 +40,9 @@ function App() {
 
         {/*Barra lateral*/}
         <aside className="lateral">
-            <Buscador/>
+            <Buscador listadoState={listadoState} setListadoState={setListadoState}/>
 
-            <Crear/>
+            <Crear setListadoState={setListadoState}/>
         </aside>
 
         {/*Pie de página*/}
