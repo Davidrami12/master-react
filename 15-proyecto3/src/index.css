@@ -20,6 +20,7 @@ body{
       "footer footer footer footer"
   ;
   grid-template-rows: 100px 70px auto 70px;
+  grid-template-columns: 1fr 1fr 1fr 25%;
 }
 
 /*ESTILOS CABECERA*/
@@ -133,6 +134,14 @@ body{
   width: 100%;
 }
 
+.form-group .mascara{
+  width: 150px;
+}
+
+.form-group .mascara img{
+  width: 150px;
+}
+
 .jumbo{
   background: white;
   border-radius: 10px;
@@ -141,6 +150,12 @@ body{
   width: 85%;
   padding: 55px;
   padding-bottom: 75px;
+}
+
+.jumbo .mascara {
+  width: 100%;
+  overflow: hidden;
+  height: 150px;
 }
 
 .jumbo h1{
@@ -157,7 +172,8 @@ body{
 .button,
 button,
 input[type="submit"],
-input[type="button"]{
+input[type="button"],
+.edit{
   text-decoration: none;
   width: 100px;
   background: #0b70e1;
