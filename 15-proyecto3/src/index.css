@@ -207,12 +207,9 @@ input[type="button"]{
   box-shadow: 0px 0px 6px #ddd;
 }
 
-.lateral input[type="text"],
-.lateral input[type="text"],
-.lateral textarea,
-.edit_form input[type="text"],
-.edit_form input[type="text"],
-.edit_form textarea
+
+input[type="text"],
+textarea
 {
   display: block;
   margin: 0 auto;
@@ -230,6 +227,29 @@ input[type="button"]{
 .edit_form{
   border-top: 1px solid #ddd;
   margin-top: 10px;
+}
+
+.form-group{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-group label{
+  display: block;
+  text-align: left;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="file"],
+.form-group textarea
+{
+  border: 1px solid #ddd;
+  outline: 0;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 /*ESTILOS PARA EL PIE DE PÁGINA*/
