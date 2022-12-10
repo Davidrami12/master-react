@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom"
+import { Routes, Route, BrowserRouter, Navigate, Link } from "react-router-dom"
 import { PrivateLayout } from '../components/layout/private/PrivateLayout'
 import { PublicLayout } from '../components/layout/public/PublicLayout'
 import { Feed } from '../components/publication/feed'
@@ -22,6 +22,15 @@ export const Routing = () => {
                 <Route path="feed" element={<Feed/>}/>
                 
             </Route>
+
+            <Route path="*" element={
+                <>
+                    <div>
+                        <h1>Error 404</h1>
+                        <Link to="/">Volver al inicio</Link>
+                    </div>
+                </>
+            }/>
 
         </Routes>
     </BrowserRouter>
