@@ -14,8 +14,8 @@ import { Inicio } from "../components/pages/Inicio";
 export const Rutas = () => {
     return (
         <BrowserRouter>
-        <Header/>
-        <Nav/>
+            <Header/>
+            <Nav/>
             <section id="content" className="content">
                 <Routes>
                     <Route path="/" element={<Inicio/>} />
@@ -25,14 +25,12 @@ export const Rutas = () => {
                     <Route path="/buscar/:busqueda" element={<Busqueda/>} />
                     <Route path="/articulo/:id/" element={<Articulo/>} />
                     <Route path="/editar/:id/" element={<Editar/>} />
-
                     <Route path="*" element={
                         <div className="jumbo">
                             <h1>Error 404</h1>
                         </div>
                     } />
                 </Routes>
-
             </section>
 
             <Sidebar/>
